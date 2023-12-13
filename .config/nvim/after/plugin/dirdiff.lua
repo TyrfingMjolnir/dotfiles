@@ -1,0 +1,2 @@
+-- :DirDiff <dir1> <dir2>
+--
