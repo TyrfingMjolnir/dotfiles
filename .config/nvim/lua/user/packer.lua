@@ -1,6 +1,7 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+	use 'nvimtools/none-ls.nvim'
 	use 'wbthomason/packer.nvim'
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
@@ -30,5 +31,6 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+	use 'apple/sourcekit-lsp'
 end)
 
