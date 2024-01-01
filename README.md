@@ -6,5 +6,5 @@ My main areas of focus for this neovim setup are:
 * Lua for neovim
 * Swift for Vapor
 * XML / XSLT for CoreData aka xcdatamodel, Storyboard, XIB / NIB, EHF, and UBL
-* Rust for Yew
+* Rust for Yew and RataTUI
 * JSON for UI
