@@ -7,7 +7,16 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		requires = { { 'nvim-lua/plenary.nvim' } }
 	}
+	use ( {
+		'rose-pine/neovim',
+		as = 'rose-pine',
+		config = function()
+			vim.cmd('colorscheme rose-pine')
+		end
+	})
 	use 'tpope/vim-dadbod'
+	use 'vimwiki/vimwiki'
+	use 'tpope/vim-commentary'
 	use 'christoomey/vim-tmux-navigator'
 	use 'will133/vim-dirdiff'
 	use 'tpope/vim-fugitive'
