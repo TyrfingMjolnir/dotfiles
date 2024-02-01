@@ -9,7 +9,7 @@ My main areas of focus for this neovim setup are:
 * Rust for Yew and RataTUI
 * JSON for UI
 
-Install Packer
+### Install Packer
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -17,7 +17,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 Eventually this repo will contain more stuff; in this case you may or may not desire to pull one or more folders specifically. https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
 
-The steps to do a sparse clone are as follows:
+#### Excerpt below: The steps to do a sparse clone are as follows:
 
 ```
 mkdir <repo>
