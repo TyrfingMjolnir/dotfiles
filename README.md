@@ -37,6 +37,8 @@ echo "some/dir/" >> .git/info/sparse-checkout
 echo "another/sub/tree" >> .git/info/sparse-checkout
 ```
 
+If I interpret this correcly; the checkout for nvim should be as follows: `echo ".config/nvim/" >> .git/info/sparse-checkout`
+
 Last but not least, update your empty repo with the state from the remote:
 
 `git pull origin master`
