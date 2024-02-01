@@ -8,3 +8,9 @@ My main areas of focus for this neovim setup are:
 * XML / XSLT for CoreData aka xcdatamodel, Storyboard / XIB / NIB, EHF, and UBL
 * Rust for Yew and RataTUI
 * JSON for UI
+
+Installer Packer
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
