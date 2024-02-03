@@ -40,6 +40,13 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 	use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-	use 'apple/sourcekit-lsp'
+	use 'apple/sourcekit-lsp',
+	use({
+		"kdheepak/lazygit.nvim",
+-- optional for floating window border decoration
+	requires = {
+		"nvim-lua/plenary.nvim",
+	}
+})
 end)
 
