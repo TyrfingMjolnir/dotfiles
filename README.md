@@ -15,6 +15,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
+### Install tree-sitter-cli
+```
+cargo install tree-sitter-cli
+```
+
 Eventually this repo will contain more stuff; in this case you may or may not desire to pull one or more folders specifically. https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
 
 #### Excerpt below: The steps to do a sparse clone are as follows:
