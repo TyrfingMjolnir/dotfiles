@@ -20,6 +20,11 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 cargo install tree-sitter-cli
 ```
 
+you also want to install
+
+* https://github.com/BurntSushi/ripgrep
+* https://github.com/sharkdp/fd
+
 Eventually this repo will contain more stuff; in this case you may or may not desire to pull one or more folders specifically. https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
 
 #### Excerpt below: The steps to do a sparse clone are as follows:
