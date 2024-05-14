@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
 	use 'tpope/vim-fugitive'
 	use 'tpope/vim-surround'
 	use 'kristijanhusak/vim-dadbod-ui'
+	use 'kristijanhusak/vim-dadbod-completion'
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'nvim-tree/nvim-web-devicons' },
