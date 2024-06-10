@@ -13,7 +13,11 @@ My main areas of focus for this neovim setup are:
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+nvim ~/.config/nvim/lua/user/packer.lua
+:so
+:PackerSync
 ```
+
 
 ### Install tree-sitter-cli
 ```
