@@ -18,7 +18,6 @@ nvim ~/.config/nvim/lua/user/packer.lua
 :PackerSync
 ```
 
-
 ### Install tree-sitter-cli
 ```
 cargo install tree-sitter-cli
@@ -56,3 +55,15 @@ If I interpret this correcly; the checkout for nvim should be as follows: `echo 
 Last but not least, update your empty repo with the state from the remote:
 
 `git pull origin master`
+
+# Platform specific
+
+## macOS Sonoma as pr example
+```
+brew install btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
+```
+
+## arch GNU/Linux as pr example
+```
+yay -S btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
+```
