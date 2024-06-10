@@ -60,7 +60,7 @@ Last but not least, update your empty repo with the state from the remote:
 
 ## macOS Sonoma as pr example
 ```
-brew install mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
+brew install ripgrep mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
 ```
 
 ## arch GNU/Linux as pr example
