@@ -21,6 +21,7 @@ return require('packer').startup(function(use)
 	use 'will133/vim-dirdiff'
 	use 'tpope/vim-fugitive'
 	use 'tpope/vim-surround'
+	use 'tpope/vim-repeat'
 	use 'kristijanhusak/vim-dadbod-ui'
 	use 'kristijanhusak/vim-dadbod-completion'
 	use {
