@@ -75,5 +75,5 @@ yay -S mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rus
 
 ## debian GNU/Linux as pr example
 ```
-apt-get install mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
+apt-get install mtr btop git neovim tmux lazygit lsd alacritty fonts-croscore rust
 ```
