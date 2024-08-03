@@ -9,6 +9,11 @@ My main areas of focus for this neovim setup are:
 * Rust for Yew and RataTUI
 * JSON for UI
 
+### Prereq Ubuntu 22.04
+```
+apt-get install cargo ripgrep fd-find
+```
+
 ### Install Packer
 ```
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
