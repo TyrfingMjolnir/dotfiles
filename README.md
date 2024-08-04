@@ -12,6 +12,25 @@ My main areas of focus for this neovim setup are:
 ### Prereq Ubuntu 22.04
 ```
 apt-get install cargo ripgrep fd-find
+nvm i --lts
+npm i -g json
+```
+
+### Install lazygit
+
+```
+### Ubuntu
+
+```sh
+export LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | json tag_name)
+curl -Lo lazygit.tar.gz ""https://github.com/jesseduffield/lazygit/releases/download/${LAZYGIT_VERSION}/lazygit_0.43.1_Linux_x86_64.tar.gz""
+sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
+```
+
+Verify the correct installation of lazygit:
+
+```sh
+lazygit --version
 ```
 
 ### Install Packer
