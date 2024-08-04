@@ -9,7 +9,7 @@ My main areas of focus for this neovim setup are:
 * Rust for Yew and RataTUI
 * JSON for UI
 
-### Prereq Ubuntu 22.04
+### Prerequisite Ubuntu 22.04
 ```
 apt-get install cargo ripgrep fd-find
 nvm i --lts
@@ -20,7 +20,7 @@ npm i -g json
 
 ```sh
 export LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | json tag_name)
-export LAZYGIT_VERSION_NO_V=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | json tag_name | tr -d v)
+export LAZYGIT_VERSION_NO_V=$(echo $LAZYGIT_VERSION | tr -d v)
 curl -Lo lazygit.tar.gz ""https://github.com/jesseduffield/lazygit/releases/download/${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION_NO_V}_Linux_x86_64.tar.gz""
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 ```
