@@ -12,6 +12,7 @@ My main areas of focus for this neovim setup are:
 ### Prerequisite Ubuntu 22.04
 ```
 apt-get install cargo ripgrep fd-find
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 nvm i --lts
 npm i -g json
 ```
