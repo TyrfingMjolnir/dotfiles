@@ -20,7 +20,8 @@ npm i -g json
 
 ```sh
 export LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | json tag_name)
-curl -Lo lazygit.tar.gz ""https://github.com/jesseduffield/lazygit/releases/download/${LAZYGIT_VERSION}/lazygit_0.43.1_Linux_x86_64.tar.gz""
+export LAZYGIT_VERSION_NO_V=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | json tag_name | tr -d v)
+curl -Lo lazygit.tar.gz ""https://github.com/jesseduffield/lazygit/releases/download/${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION_NO_V}_Linux_x86_64.tar.gz""
 sudo tar xf lazygit.tar.gz -C /usr/local/bin lazygit
 ```
 
