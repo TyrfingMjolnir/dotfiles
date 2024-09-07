@@ -1,8 +1,8 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	use 'nvimtools/none-ls.nvim'
 	use 'wbthomason/packer.nvim'
+	use 'nvimtools/none-ls.nvim'
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		requires = { { 'nvim-lua/plenary.nvim' } }
