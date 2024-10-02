@@ -10,7 +10,7 @@ My main areas of focus for this neovim setup are:
 * JSON for UI
 
 ### Prerequisite Ubuntu 22.04
-```
+```Shell
 apt-get install cargo ripgrep fd-find
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 nvm i --lts
@@ -32,17 +32,23 @@ lazygit --version
 ```
 
 ### Install Packer
-```
+```Shell
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 nvim ~/.config/nvim/lua/user/packer.lua
+```
+```vim
 :so
 :PackerSync
 ```
 
 ### Install tree-sitter-cli
-```
+```Shell
 cargo install tree-sitter-cli
+```
+or the npm way
+```Shell
+npm i -g tree-sitter-cli
 ```
 
 you also want to install
