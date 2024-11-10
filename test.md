@@ -9,7 +9,7 @@ Before diving into Nginx and Keycloak, let’s revisit some foundational concept
 ## Understanding the Difference: Authentication vs. Authorization
 In the realm of security, the terms “authentication” and “authorization” often come up. Although they might sound similar and are sometimes used interchangeably, they have distinct meanings and functions. Let’s delve into each of these terms to understand their differences and importance.
 
-### 1. Authentication
+## 1. Authentication
 Definition: Authentication refers to the process of verifying the identity of a user, system, or application. It answers the question, “Are you who you say you are?”
 
 How it Works: The most common form of authentication is a username and password combination. When a user enters these credentials, the system compares them against stored data to verify their identity. Other methods include biometrics (like fingerprint or facial recognition), OTPs (one-time passwords), and hardware tokens.
@@ -20,7 +20,7 @@ Entering a password to log into your email account.
 Using a fingerprint to unlock your smartphone.
 Receiving an SMS code to confirm your identity on a banking website.
 
-### 2. Authorization
+## 2. Authorization
 Definition: Once authentication is established, authorization determines what that user, system, or application is permitted to do. It answers the question, “Do you have permission to perform this action?”
 
 How it Works: Authorization is typically managed by setting permissions or roles. For instance, a user might be granted read-only access to a database, while an admin has the rights to both read and modify it.
