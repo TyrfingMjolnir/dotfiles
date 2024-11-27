@@ -9,7 +9,7 @@ Did not get the splash screen working yet.
 
 My main areas of focus for this neovim setup are:
 * Lua for neovim
-* Swift for Vapor, also worth a look: https://github.com/kkharji/xbase
+* Swift for Vapor, also worth a look: https://github.com/kkharji/xbase; this is how I installed SourceKit-LSP under Ubuntu 22.04 LTS https://gist.github.com/TyrfingMjolnir/ad7bbc1940f1dcf218204b3149d488ed
 * XML / XSLT for CoreData aka xcdatamodel, Storyboard / XIB / NIB, EHF, and UBL
 * Rust for Yew and RataTUI
 * JSON for UI
