@@ -1,8 +1,10 @@
-return { 'tpope/vim-dadbod', lazy = false },
-  { 'kristijanhusak/vim-dadbod-ui',
-  lazy = false,
-  config = function()
-	  vim.keymap.set( "n", "<leader>db", vim.cmd.DBUI )
-  end
-},
-{ 'kristijanhusak/vim-dadbod-completion', lazy = false }
+return { 'tpope/vim-dadbod',
+	lazy = false,
+	dependencies = {
+  		'kristijanhusak/vim-dadbod-ui',
+		'kristijanhusak/vim-dadbod-completion',
+	},
+	config = function()
+		vim.keymap.set( "n", "<leader>db", vim.cmd.DBUI )
+	end
+}
