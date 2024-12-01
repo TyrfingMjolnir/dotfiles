@@ -93,15 +93,15 @@ Last but not least, update your empty repo with the state from the remote:
 
 ## macOS Sonoma as pr example
 ```
-brew install ripgrep mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust vapor
+brew install ripgrep mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font rust vapor
 ```
 
 ## arch GNU/Linux as pr example
 ```
-yay -S mtr btop git neovim tmux lazygit lsd alacritty font-cousine-nerd-font rust
+yay -S mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font rust
 ```
 
 ## debian GNU/Linux as pr example
 ```
-apt-get install mtr btop git neovim tmux lazygit lsd alacritty fonts-croscore rust
+apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts-croscore rust
 ```
