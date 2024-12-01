@@ -14,21 +14,21 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
 	{
-		'mbbill/undotree',
-		lazy = false,
+		'mbbill/undotree', lazy = false,
 		config = function()
 			vim.opt.undofile=true
 			vim.keymap.set( "n", "<leader>u", vim.cmd.UndotreeToggle )
 			vim.g.undotree_WindowLayout=2
 		end
 	},
-	require 'plugin.telescope',
-	require 'plugin.wiki',
-	require 'plugin.commentary',
-	require 'plugin.surround',
-	require 'plugin.dadbod',
-	require 'plugin.lspconfig',
 	require 'plugin.autocomplete',
-	require 'plugin.tokyonight'
+	require 'plugin.commentary',
+	require 'plugin.dadbod',
+	require 'plugin.dadbod',
+	require 'plugin.lazygit',
+	require 'plugin.lspconfig',
+	require 'plugin.surround',
+	require 'plugin.telescope',
+	require 'plugin.tokyonight',
+	require 'plugin.wiki',
 })
-
