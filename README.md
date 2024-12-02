@@ -16,7 +16,14 @@ My main areas of focus for this neovim setup are:
 
 ### Prerequisite Ubuntu 22.04
 ```Shell
-apt-get install cargo ripgrep fd-find
+apt-get install  ripgrep fd-find
+```
+Rust w/ cargo
+```
+https://rustup.rs/
+```
+Node version manager
+```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 nvm i --lts
 npm i -g json
