@@ -15,8 +15,10 @@ return function(opts)
     or {
       ["l"] = "*.lua",
       ["v"] = "*.vim",
+      ["s"] = "*.swift",
       ["n"] = "*.{vim,lua}",
       ["c"] = "*.c",
+      ["p"] = "*.{py,pyc}",
       ["r"] = "*.rs",
       ["g"] = "*.go",
     }
