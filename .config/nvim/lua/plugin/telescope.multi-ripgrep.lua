@@ -15,12 +15,14 @@ return function(opts)
     or {
       ["l"] = "*.lua",
       ["v"] = "*.vim",
-      ["s"] = "*.swift",
       ["n"] = "*.{vim,lua}",
       ["c"] = "*.c",
       ["p"] = "*.{py,pyc}",
       ["r"] = "*.rs",
       ["g"] = "*.go",
+      ["s"] = "*.swift",
+      ["cd"] = "*.xcdatamodel", -- CoreData
+      ["xib"] = "*.{xib,nib,storyboard}", -- Apple GUI
     }
   opts.pattern = opts.pattern or "%s"
 
