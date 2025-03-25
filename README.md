@@ -112,3 +112,6 @@ yay -S mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font rust
 ```
 apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts-croscore rust
 ```
+
+
+When doing a substantial amount of reading someone else's code it gives me a headache not having spaces inside brackets. 
