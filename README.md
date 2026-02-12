@@ -14,14 +14,20 @@ My main areas of focus for this neovim setup are:
 * Rust for Yew and RataTUI
 * JSON for UI
 
+### Linux general
+
+In order to install `sourcekit-lsp` for neovim one might just as well install swiftly on linux https://www.swift.org/install/linux/swiftly/ in which will give you swift w/sourcekit-lsp
+
+### Install rust natively to rust by utilizing rustup
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
 ### Prerequisite Ubuntu 22.04
 ```Shell
-apt-get install  ripgrep fd-find
+apt-get install ripgrep fd-find
 ```
-Rust w/ cargo
-```
-https://rustup.rs/
-```
+
 Node version manager
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
@@ -37,7 +43,7 @@ curl -Lo /tmp/lazygit.tar.gz ""https://github.com/jesseduffield/lazygit/releases
 sudo tar xf /tmp/lazygit.tar.gz -C /usr/local/bin lazygit
 ```
 
-Verify the correct installation of lazygit:
+Verify the correct installation of lazygit is default:
 
 ```sh
 lazygit --version
@@ -68,7 +74,7 @@ you also want to install
 * https://github.com/BurntSushi/ripgrep
 * https://github.com/sharkdp/fd
 
-Eventually this repo will contain more stuff; in this case you may or may not desire to pull one or more folders specifically. https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
+Eventually this README will contain more stuff; in this case you may or may not desire to pull one or more folders specifically. https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository
 
 #### Excerpt below: The steps to do a sparse clone are as follows:
 
@@ -110,19 +116,7 @@ yay -S mtr atop iotop ss btop git neovim tmux lazygit lsd exa eza wezterm ghostt
 
 ## debian GNU/Linux as pr example
 ```
-apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts-croscore rust
+apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts-croscore
 ```
 When doing a substantial amount of reading someone else's code it gives me a headache not having spaces inside brackets. 
-
-## Linux general
-```
-git clone https://github.com/apple/swift
-git clone https://github.com/TyrfingMjolnir/dotfiles
-```
-
-## Rustup
-```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
 
