@@ -100,18 +100,29 @@ Last but not least, update your empty repo with the state from the remote:
 
 ## macOS Sonoma as pr example
 ```
-brew install ripgrep mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font rust vapor
+brew install ripgrep mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font vapor
 ```
 
 ## arch GNU/Linux as pr example
 ```
-yay -S mtr btop git neovim tmux lazygit lsd kitty font-cousine-nerd-font rust
+yay -S mtr atop iotop ss btop git neovim tmux lazygit lsd exa eza wezterm ghostty kitty font-cousine-nerd-font base-devel
 ```
 
 ## debian GNU/Linux as pr example
 ```
 apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts-croscore rust
 ```
-
-
 When doing a substantial amount of reading someone else's code it gives me a headache not having spaces inside brackets. 
+
+## Linux general
+```
+git clone https://github.com/apple/swift
+git clone https://github.com/TyrfingMjolnir/dotfiles
+```
+
+## Rustup
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+
