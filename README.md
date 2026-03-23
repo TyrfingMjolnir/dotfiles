@@ -120,3 +120,6 @@ apt-get install ripgrep fd-find mtr btop git neovim tmux lazygit lsd kitty fonts
 ```
 When doing a substantial amount of reading someone else's code it gives me a headache not having spaces inside brackets. 
 
+```
+cargo install parsync 
+```
