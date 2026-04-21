@@ -1,0 +1,3 @@
+vim.bo.makeprg = "xcodebuild -scheme ${SCHEME:-MyApp} build"  -- change SCHEME or use xcodebuild -project ...
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2

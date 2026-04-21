@@ -1,34 +1,17 @@
-require 'options'
-require 'map'
-
-local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-	local lazyrepo = 'https://github.com/folke/lazy.nvim.git'
-	local out = vim.fn.system { 'git', 'clone', '--filter=blob:none', '--branch=stable', lazyrepo, lazypath }
-	if vim.v.shell_error ~= 0 then
-		error('Error cloning lazy.nvim:\n' .. out)
-	end
-end
-
-vim.opt.rtp:prepend(lazypath)
-
-require('lazy').setup({
-	{
-		'mbbill/undotree', lazy = false,
-		config = function()
-			vim.opt.undofile=true
-			vim.keymap.set( "n", "<leader>u", vim.cmd.UndotreeToggle )
-			vim.g.undotree_WindowLayout=2
-		end
+require('vim._core.ui2').enable({
+	enable = true,
+	msg = {
+		target = "cmd",
+		pager = { height = 0.5 },
+		dialog = { height = 0.5 },
+		cmd = { height = 0.5 },
+		msg = { height = 0.5, timeout = 4500 },
 	},
-	require 'plugin.autocomplete',
-	require 'plugin.commentary',
-	require 'plugin.dadbod',
-	require 'plugin.dadbod',
-	require 'plugin.lazygit',
-	require 'plugin.lspconfig',
-	require 'plugin.surround',
-	require 'plugin.telescope',
-	require 'plugin.tokyonight',
-	require 'plugin.wiki',
 })
+
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+
+require("user.core")
+require("user.lazy")
