@@ -1,25 +1,35 @@
-# Base style (change to LLVM, Google, etc. as needed, or remove for fully custom)
-BasedOnStyle: LLVM
+BasedOnStyle: LLVM   # Or Google, Microsoft, etc. — change as you like
 
-# === Parentheses () ===
+# === Spaces BEFORE opening parentheses ===
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true          # if ( cond ), while ( cond ), for ( ... )
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false   # void func(int x)  ← no space
+  AfterFunctionDefinitionName: false    # void func(int x) { ... } ← no space
+  AfterIfMacros: true
+  BeforeNonEmptyParentheses: false      # This is the key: no space before ( when there ARE arguments
+  # Most other options default to false (tight for calls/decls)
+
+# === Spaces INSIDE parentheses () ===
 SpacesInParens: Custom
 SpacesInParensOptions:
-  InEmptyParentheses: false   # No space in empty: foo()
-  InConditionalStatements: true   # Space inside if/while/for/etc. when non-empty: if (cond)
-  InCStyleCasts: true             # Optional: space in (int) x  → ( int ) x
-  Other: true                     # Space inside function calls/decls when non-empty: foo(bar)
-  ExceptDoubleParentheses: false  # Optional tweak for (( ))
+  InEmptyParentheses: false             # No space in empty: func()
+  InConditionalStatements: true         # Space in if/while/for when non-empty: if ( cond )
+  InCStyleCasts: false                  # (int)x  or  ( int )x — your choice
+  Other: true                           # Space inside function calls when parameters present: func( arg )
 
-# === Square Brackets [] ===
-SpacesInSquareBrackets: true      # Spaces when content present: arr[ i ]
-# Note: No built-in "empty vs non-empty" toggle for [], so this applies to both.
-# Empty [] will get spaces ( [ ] ) if true; tight [] if false.
+# === Square brackets [] ===
+SpacesInSquareBrackets: true            # arr[ index ] when content, but empty [] stays tight in most cases
 
 # === Braces {} ===
-SpacesInBraces: true              # Spaces when content present in braced lists/initializers: { a, b }
-SpaceInEmptyBraces: Never         # Or use Custom if available in your version (see below)
-# For blocks like void f() {}, empty often stays tight regardless.
+SpacesInBraces: true                    # { 1, 2, 3 } when values
+SpaceInEmptyBraces: Never               # {} stays tight (newer versions support this)
+# Or for more control (if your version has it):
+# SpaceInEmptyBraces: Custom
+# SpaceInEmptyBracesOptions:
+#   Block: false   # for function bodies etc.
 
-# Additional helpful options
-SpaceBeforeParens: NonEmptyParentheses   # Space before ( only if non-empty, e.g. f (arg) but f()
-# Or use Custom for more control if needed.
+# Helpful extras
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeRangeBasedForLoopColon: true
