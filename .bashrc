@@ -8,6 +8,8 @@ alias  la="ls -lAh"
 
 alias  md="mkdir -p"
 
+alias nvim-sig="NVIM_APPNAME=nvim-sig nvim"
+
 alias   v="/usr/local/bin/nvim-linux-x86_64/bin/nvim"
 alias  vi="/usr/local/bin/nvim-linux-x86_64/bin/nvim"
 alias vim="/usr/local/bin/nvim-linux-x86_64/bin/nvim"
